@@ -1,44 +1,29 @@
 <html>
   <head>
-    <meta charset="UTF-8" />
-
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="script.js" type="text/javascript" defer></script>
+    <meta charset="UTF-8">
+    
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+     <script src="script.js" type="text/javascript" defer></script>
   </head>
   <body>
     <div class="list roudnBorder">
       <div class="date">
         <div class="dateRight">
           <div id="dateNumber"></div>
-          <div>
-            <div id="dateMonth"></div>
-            <div id="dateYear"></div>
-          </div>
+              <div>
+                <div id="dateMonth"></div>
+                <div id="dateYear"></div>
+              </div>
         </div>
         <div id="dateText"></div>
       </div>
-      <form onsubmit="addNewTask(event)">
-        <input
-          type="text"
-          name="taskText"
-          autocomplete="off"
-          placeholder="Nueva Tarea"
-          class="roudnBorder"
-        />
-        <button type="submit" class="addTaskButton">+</button>
-        <button
-          type="button"
-          class="orderButton roudnBorder"
-          onclick="renderOnderedTasks()"
-        >
-          Ordenar
-        </button>
-      </form>
-      <div id="taskContainer"></div>
+          <form onsubmit="addNewTask(event)">
+          <input type="text" name="taskText" autocomplete="off" placeholder="Nueva Tarea" class="roudnBorder">
+          <button type="submit" class="addTaskButton" >+</button>
+          <button type="button" class="orderButton roudnBorder" onclick="renderOnderedTasks()">Ordenar</button>
+          </form>
+            <div id="taskContainer"></div>
     </div>
   </body>
 </html>
